@@ -28,6 +28,9 @@
  */
 package org.n52.sta.data.query;
 
+import javax.persistence.criteria.Join;
+import javax.persistence.criteria.JoinType;
+
 import org.n52.series.db.beans.CategoryEntity;
 import org.n52.series.db.beans.DatasetEntity;
 import org.n52.series.db.beans.DescribableEntity;
@@ -37,9 +40,6 @@ import org.n52.series.db.beans.PhenomenonEntity;
 import org.n52.series.db.beans.PlatformEntity;
 import org.n52.series.db.beans.ProcedureEntity;
 import org.springframework.data.jpa.domain.Specification;
-
-import javax.persistence.criteria.Join;
-import javax.persistence.criteria.JoinType;
 
 public class DatasetQuerySpecifications {
 

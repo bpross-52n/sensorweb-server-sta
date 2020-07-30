@@ -29,10 +29,12 @@
 
 package org.n52.sta.data.service.extension;
 
+import java.util.List;
+
 import org.n52.series.db.beans.DataEntity;
 import org.n52.series.db.beans.DatasetEntity;
 import org.n52.series.db.beans.sta.AbstractObservationEntity;
-import org.n52.series.db.beans.sta.mapped.DatastreamEntity;
+import org.n52.series.db.beans.sta.DatastreamEntity;
 import org.n52.series.db.beans.sta.mapped.extension.CSObservation;
 import org.n52.series.db.beans.sta.mapped.extension.ObservationRelation;
 import org.n52.shetland.filter.ExpandFilter;
@@ -57,8 +59,6 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

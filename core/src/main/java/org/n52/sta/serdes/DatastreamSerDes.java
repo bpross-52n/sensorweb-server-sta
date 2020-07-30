@@ -29,13 +29,9 @@
 
 package org.n52.sta.serdes;
 
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.databind.DeserializationContext;
-import com.fasterxml.jackson.databind.SerializerProvider;
-import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-import org.n52.series.db.beans.sta.mapped.DatastreamEntity;
+import java.io.IOException;
+
+import org.n52.series.db.beans.sta.DatastreamEntity;
 import org.n52.shetland.ogc.sta.model.DatastreamEntityDefinition;
 import org.n52.sta.serdes.json.JSONBase;
 import org.n52.sta.serdes.json.JSONDatastream;
@@ -44,7 +40,13 @@ import org.n52.sta.serdes.util.EntityPatch;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.SerializerProvider;
+import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
+
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 public class DatastreamSerDes {
 

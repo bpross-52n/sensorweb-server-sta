@@ -29,7 +29,7 @@
 
 package org.n52.sta.serdes.json;
 
-import org.n52.series.db.beans.sta.mapped.ObservationEntity;
+import org.n52.series.db.beans.sta.ObservationEntity;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

@@ -29,9 +29,10 @@
 
 package org.n52.sta.mqtt.core;
 
-import io.moquette.interception.messages.InterceptPublishMessage;
 import org.n52.series.db.beans.HibernateRelations;
 import org.n52.sta.utils.CoreRequestUtils;
+
+import io.moquette.interception.messages.InterceptPublishMessage;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

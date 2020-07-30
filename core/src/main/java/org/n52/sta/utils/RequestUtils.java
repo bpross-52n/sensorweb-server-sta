@@ -29,6 +29,10 @@
 
 package org.n52.sta.utils;
 
+import java.nio.charset.Charset;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.n52.shetland.oasis.odata.query.option.QueryOptions;
 import org.n52.shetland.ogc.sta.StaConstants;
 import org.n52.shetland.ogc.sta.exception.STAInvalidUrlException;
@@ -36,9 +40,6 @@ import org.n52.shetland.ogc.sta.exception.STANotFoundException;
 import org.n52.sta.data.service.EntityServiceRepository;
 import org.n52.svalbard.odata.core.QueryOptionsFactory;
 import org.springframework.web.util.UriUtils;
-
-import javax.servlet.http.HttpServletRequest;
-import java.nio.charset.Charset;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

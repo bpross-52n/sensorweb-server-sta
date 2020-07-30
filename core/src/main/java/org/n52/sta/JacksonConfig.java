@@ -29,20 +29,16 @@
 
 package org.n52.sta;
 
-import com.fasterxml.jackson.databind.Module;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.module.SimpleDeserializers;
-import com.fasterxml.jackson.databind.module.SimpleModule;
-import com.fasterxml.jackson.databind.module.SimpleSerializers;
-import com.fasterxml.jackson.module.afterburner.AfterburnerModule;
+import java.util.ArrayList;
+
 import org.n52.series.db.beans.AbstractFeatureEntity;
 import org.n52.series.db.beans.PhenomenonEntity;
 import org.n52.series.db.beans.PlatformEntity;
+import org.n52.series.db.beans.sta.DatastreamEntity;
 import org.n52.series.db.beans.sta.HistoricalLocationEntity;
 import org.n52.series.db.beans.sta.LocationEntity;
+import org.n52.series.db.beans.sta.ObservationEntity;
 import org.n52.series.db.beans.sta.SensorEntity;
-import org.n52.series.db.beans.sta.mapped.DatastreamEntity;
-import org.n52.series.db.beans.sta.mapped.ObservationEntity;
 import org.n52.series.db.beans.sta.mapped.extension.CSDatastream;
 import org.n52.series.db.beans.sta.mapped.extension.CSObservation;
 import org.n52.series.db.beans.sta.mapped.extension.License;
@@ -75,8 +71,12 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 
-import javax.mail.Part;
-import java.util.ArrayList;
+import com.fasterxml.jackson.databind.Module;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.module.SimpleDeserializers;
+import com.fasterxml.jackson.databind.module.SimpleModule;
+import com.fasterxml.jackson.databind.module.SimpleSerializers;
+import com.fasterxml.jackson.module.afterburner.AfterburnerModule;
 
 @Configuration
 public class JacksonConfig {

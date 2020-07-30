@@ -29,9 +29,8 @@
 
 package org.n52.sta;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.exc.MismatchedInputException;
-import com.fasterxml.jackson.databind.node.ObjectNode;
+import javax.persistence.PersistenceException;
+
 import org.hibernate.exception.ConstraintViolationException;
 import org.hibernate.exception.DataException;
 import org.n52.shetland.ogc.sta.exception.STACRUDException;
@@ -47,7 +46,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import javax.persistence.PersistenceException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.exc.MismatchedInputException;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 
 /**
  * Class used to customize Exception serialization to json.

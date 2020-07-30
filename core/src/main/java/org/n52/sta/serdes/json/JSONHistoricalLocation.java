@@ -29,8 +29,11 @@
 
 package org.n52.sta.serdes.json;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Date;
+import java.util.stream.Collectors;
+
 import org.n52.series.db.beans.sta.HistoricalLocationEntity;
 import org.n52.shetland.ogc.gml.time.Time;
 import org.n52.shetland.ogc.gml.time.TimeInstant;
@@ -39,10 +42,9 @@ import org.n52.shetland.ogc.sta.exception.STACRUDException;
 import org.n52.sta.utils.TimeUtil;
 import org.springframework.util.Assert;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Date;
-import java.util.stream.Collectors;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 @SuppressWarnings("VisibilityModifier")
 @SuppressFBWarnings({"NM_FIELD_NAMING_CONVENTION", "UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD"})

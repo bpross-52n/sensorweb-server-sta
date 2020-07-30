@@ -29,7 +29,14 @@
 
 package org.n52.sta.data.service;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import java.math.BigDecimal;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
+import java.util.regex.Pattern;
+
 import org.n52.janmayen.http.HTTPStatus;
 import org.n52.series.db.beans.AbstractFeatureEntity;
 import org.n52.series.db.beans.CategoryEntity;
@@ -42,14 +49,14 @@ import org.n52.series.db.beans.dataset.DatasetType;
 import org.n52.series.db.beans.dataset.ObservationType;
 import org.n52.series.db.beans.dataset.ValueType;
 import org.n52.series.db.beans.sta.AbstractObservationEntity;
+import org.n52.series.db.beans.sta.BooleanObservationEntity;
+import org.n52.series.db.beans.sta.CategoryObservationEntity;
+import org.n52.series.db.beans.sta.CountObservationEntity;
+import org.n52.series.db.beans.sta.DatastreamEntity;
 import org.n52.series.db.beans.sta.LocationEntity;
-import org.n52.series.db.beans.sta.mapped.BooleanObservationEntity;
-import org.n52.series.db.beans.sta.mapped.CategoryObservationEntity;
-import org.n52.series.db.beans.sta.mapped.CountObservationEntity;
-import org.n52.series.db.beans.sta.mapped.DatastreamEntity;
-import org.n52.series.db.beans.sta.mapped.ObservationEntity;
-import org.n52.series.db.beans.sta.mapped.QuantityObservationEntity;
-import org.n52.series.db.beans.sta.mapped.TextObservationEntity;
+import org.n52.series.db.beans.sta.ObservationEntity;
+import org.n52.series.db.beans.sta.QuantityObservationEntity;
+import org.n52.series.db.beans.sta.TextObservationEntity;
 import org.n52.shetland.oasis.odata.query.option.QueryOptions;
 import org.n52.shetland.ogc.om.OmConstants;
 import org.n52.shetland.ogc.sta.exception.STACRUDException;
@@ -63,7 +70,6 @@ import org.n52.sta.data.repositories.DataRepository;
 import org.n52.sta.data.repositories.DatasetRepository;
 import org.n52.sta.data.repositories.DatastreamRepository;
 import org.n52.sta.data.repositories.EntityGraphRepository;
-import org.n52.sta.data.repositories.GetFirstLastObservation;
 import org.n52.sta.data.repositories.OfferingRepository;
 import org.n52.sta.data.repositories.ParameterRepository;
 import org.n52.sta.data.repositories.StaIdentifierRepository;
@@ -74,15 +80,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.HttpMethod;
 
-import java.math.BigDecimal;
-import java.util.Collections;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

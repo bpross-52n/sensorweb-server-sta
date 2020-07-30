@@ -29,8 +29,12 @@
 
 package org.n52.sta.serdes;
 
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.databind.SerializerProvider;
+import java.io.IOException;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
 import org.locationtech.jts.io.geojson.GeoJsonWriter;
 import org.n52.series.db.beans.sta.AbstractDatastreamEntity;
 import org.n52.shetland.filter.ExpandItem;
@@ -42,11 +46,8 @@ import org.n52.shetland.util.DateTimeHelper;
 import org.n52.sta.serdes.util.ElementWithQueryOptions;
 import org.n52.sta.utils.TimeUtil;
 
-import java.io.IOException;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.SerializerProvider;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>
@@ -54,12 +55,12 @@ import java.util.Set;
 public abstract class AbstractDatastreamSerializer<T extends ElementWithQueryOptions>
         extends AbstractSTASerializer<T> {
 
+    private static final GeoJsonWriter GEO_JSON_WRITER = new GeoJsonWriter();
+    private static final long serialVersionUID = -6555417490577181829L;
+
     protected AbstractDatastreamSerializer(Class<T> t) {
         super(t);
     }
-
-    private static final GeoJsonWriter GEO_JSON_WRITER = new GeoJsonWriter();
-    private static final long serialVersionUID = -6555417490577181829L;
 
     @Override
     public void serialize(T value,

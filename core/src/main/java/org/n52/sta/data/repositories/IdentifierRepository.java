@@ -29,13 +29,10 @@
 
 package org.n52.sta.data.repositories;
 
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.domain.Specification;
+import java.util.Optional;
+
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
-import java.util.Optional;
 
 @NoRepositoryBean
 @Transactional

@@ -29,8 +29,17 @@
 
 package org.n52.sta.data.service.util;
 
+import java.util.Date;
+import java.util.function.BiFunction;
+
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Expression;
+import javax.persistence.criteria.Path;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
+
 import org.n52.series.db.beans.parameter.ParameterEntity;
-import org.n52.series.db.beans.sta.mapped.ObservationEntity;
+import org.n52.series.db.beans.sta.ObservationEntity;
 import org.n52.shetland.oasis.odata.ODataConstants;
 import org.n52.shetland.ogc.filter.FilterConstants;
 import org.n52.shetland.ogc.gml.time.TimeInstant;
@@ -52,14 +61,6 @@ import org.n52.svalbard.odata.core.expr.bool.BooleanUnaryExpr;
 import org.n52.svalbard.odata.core.expr.bool.ComparisonExpr;
 import org.n52.svalbard.odata.core.expr.temporal.TimeValueExpr;
 import org.springframework.data.jpa.domain.Specification;
-
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Expression;
-import javax.persistence.criteria.Path;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
-import java.util.Date;
-import java.util.function.BiFunction;
 
 /**
  * Visitor visiting svalbard.odata.Expr and parsing it into javax.expression to be used in database access.

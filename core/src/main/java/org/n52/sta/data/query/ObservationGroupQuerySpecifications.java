@@ -29,16 +29,16 @@
 
 package org.n52.sta.data.query;
 
+import javax.persistence.criteria.Expression;
+import javax.persistence.criteria.Join;
+import javax.persistence.criteria.JoinType;
+
 import org.n52.series.db.beans.DescribableEntity;
 import org.n52.series.db.beans.sta.mapped.extension.ObservationGroup;
 import org.n52.series.db.beans.sta.mapped.extension.ObservationRelation;
 import org.n52.shetland.ogc.filter.FilterConstants;
 import org.n52.shetland.ogc.sta.exception.STAInvalidFilterExpressionException;
 import org.springframework.data.jpa.domain.Specification;
-
-import javax.persistence.criteria.Expression;
-import javax.persistence.criteria.Join;
-import javax.persistence.criteria.JoinType;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

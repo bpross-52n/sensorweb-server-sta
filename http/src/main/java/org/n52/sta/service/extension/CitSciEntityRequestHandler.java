@@ -29,6 +29,8 @@
 
 package org.n52.sta.service.extension;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.n52.sta.data.service.EntityServiceRepository;
 import org.n52.sta.serdes.util.ElementWithQueryOptions;
 import org.n52.sta.service.AbstractEntityRequestHandler;
@@ -37,8 +39,6 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * Handles all requests to Entities and to Entity association links

@@ -29,6 +29,10 @@
 
 package org.n52.sta.data.service;
 
+import java.util.Optional;
+
+import javax.persistence.criteria.Predicate;
+
 import org.hibernate.query.criteria.internal.CriteriaBuilderImpl;
 import org.n52.series.db.beans.AbstractFeatureEntity;
 import org.n52.series.db.beans.DescribableEntity;
@@ -39,13 +43,13 @@ import org.n52.series.db.beans.PhenomenonEntity;
 import org.n52.series.db.beans.PlatformEntity;
 import org.n52.series.db.beans.ProcedureEntity;
 import org.n52.series.db.beans.sta.AbstractObservationEntity;
+import org.n52.series.db.beans.sta.DatastreamEntity;
 import org.n52.series.db.beans.sta.HistoricalLocationEntity;
 import org.n52.series.db.beans.sta.LocationEntity;
 import org.n52.series.db.beans.sta.ObservablePropertyEntity;
+import org.n52.series.db.beans.sta.ObservationEntity;
 import org.n52.series.db.beans.sta.SensorEntity;
 import org.n52.series.db.beans.sta.StaFeatureEntity;
-import org.n52.series.db.beans.sta.mapped.DatastreamEntity;
-import org.n52.series.db.beans.sta.mapped.ObservationEntity;
 import org.n52.series.db.beans.sta.mapped.extension.ObservationGroup;
 import org.n52.series.db.beans.sta.mapped.extension.ObservationRelation;
 import org.n52.shetland.filter.ExpandFilter;
@@ -74,9 +78,6 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.HttpMethod;
 import org.springframework.transaction.annotation.Transactional;
-
-import javax.persistence.criteria.Predicate;
-import java.util.Optional;
 
 /**
  * Interface for requesting Sensor Things entities

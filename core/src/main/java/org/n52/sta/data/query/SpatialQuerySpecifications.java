@@ -29,12 +29,12 @@
 
 package org.n52.sta.data.query;
 
+import javax.persistence.criteria.Expression;
+import javax.persistence.criteria.Root;
+
 import org.n52.sta.data.service.util.HibernateSpatialCriteriaBuilder;
 import org.n52.svalbard.odata.core.expr.GeoValueExpr;
 import org.springframework.data.jpa.domain.Specification;
-
-import javax.persistence.criteria.Expression;
-import javax.persistence.criteria.Root;
 
 /**
  * Interface providing functions for handling spatial

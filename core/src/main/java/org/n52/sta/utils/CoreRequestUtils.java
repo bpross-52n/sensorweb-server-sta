@@ -29,14 +29,19 @@
 
 package org.n52.sta.utils;
 
+import java.nio.charset.Charset;
+import java.util.regex.Pattern;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.n52.series.db.beans.AbstractFeatureEntity;
 import org.n52.series.db.beans.PhenomenonEntity;
 import org.n52.series.db.beans.PlatformEntity;
+import org.n52.series.db.beans.sta.DatastreamEntity;
 import org.n52.series.db.beans.sta.HistoricalLocationEntity;
 import org.n52.series.db.beans.sta.LocationEntity;
+import org.n52.series.db.beans.sta.ObservationEntity;
 import org.n52.series.db.beans.sta.SensorEntity;
-import org.n52.series.db.beans.sta.mapped.DatastreamEntity;
-import org.n52.series.db.beans.sta.mapped.ObservationEntity;
 import org.n52.shetland.oasis.odata.query.option.QueryOptions;
 import org.n52.shetland.ogc.sta.exception.STAInvalidUrlException;
 import org.n52.shetland.ogc.sta.model.STAEntityDefinition;
@@ -49,10 +54,6 @@ import org.n52.sta.serdes.ObservedPropertySerDes;
 import org.n52.sta.serdes.SensorSerDes;
 import org.n52.sta.serdes.ThingSerDes;
 import org.springframework.web.util.UriUtils;
-
-import javax.servlet.http.HttpServletRequest;
-import java.nio.charset.Charset;
-import java.util.regex.Pattern;
 
 public interface CoreRequestUtils extends RequestUtils {
 

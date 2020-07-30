@@ -29,12 +29,13 @@
 
 package org.n52.sta.data.service.util;
 
-import org.hibernate.query.criteria.HibernateCriteriaBuilder;
-import org.locationtech.jts.geom.Geometry;
+import java.io.Serializable;
 
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Predicate;
-import java.io.Serializable;
+
+import org.hibernate.query.criteria.HibernateCriteriaBuilder;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Implements Spatial operations as defined in SensorThingsAPI 15-078r6 Section 9.3.3.5.2

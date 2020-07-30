@@ -29,12 +29,12 @@
 
 package org.n52.sta.mqtt.core.subscription;
 
-import org.n52.series.db.beans.HibernateRelations;
-import org.n52.shetland.oasis.odata.query.option.QueryOptions;
-
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
+
+import org.n52.series.db.beans.HibernateRelations;
+import org.n52.shetland.oasis.odata.query.option.QueryOptions;
 
 /**
  * @author <a href="mailto:s.drost@52north.org">Sebastian Drost</a>

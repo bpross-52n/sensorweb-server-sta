@@ -29,10 +29,10 @@
 
 package org.n52.sta.data.repositories;
 
+import java.util.Optional;
+
 import org.n52.series.db.beans.CategoryEntity;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Optional;
 
 @Transactional
 public interface CategoryRepository extends EntityGraphRepository<CategoryEntity, Long> {

@@ -29,17 +29,22 @@
 
 package org.n52.sta.data.service;
 
+import java.math.BigDecimal;
+import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.n52.series.db.beans.AbstractFeatureEntity;
 import org.n52.series.db.beans.DataEntity;
 import org.n52.series.db.beans.DatasetEntity;
 import org.n52.series.db.beans.sta.AbstractObservationEntity;
-import org.n52.series.db.beans.sta.mapped.BooleanObservationEntity;
-import org.n52.series.db.beans.sta.mapped.CategoryObservationEntity;
-import org.n52.series.db.beans.sta.mapped.CountObservationEntity;
-import org.n52.series.db.beans.sta.mapped.DatastreamEntity;
-import org.n52.series.db.beans.sta.mapped.ObservationEntity;
-import org.n52.series.db.beans.sta.mapped.QuantityObservationEntity;
-import org.n52.series.db.beans.sta.mapped.TextObservationEntity;
+import org.n52.series.db.beans.sta.BooleanObservationEntity;
+import org.n52.series.db.beans.sta.CategoryObservationEntity;
+import org.n52.series.db.beans.sta.CountObservationEntity;
+import org.n52.series.db.beans.sta.DatastreamEntity;
+import org.n52.series.db.beans.sta.ObservationEntity;
+import org.n52.series.db.beans.sta.QuantityObservationEntity;
+import org.n52.series.db.beans.sta.TextObservationEntity;
 import org.n52.shetland.filter.ExpandFilter;
 import org.n52.shetland.filter.ExpandItem;
 import org.n52.shetland.ogc.om.OmConstants;
@@ -63,11 +68,6 @@ import org.springframework.context.annotation.DependsOn;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

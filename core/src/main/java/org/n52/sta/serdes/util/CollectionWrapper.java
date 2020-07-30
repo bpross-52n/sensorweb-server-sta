@@ -29,9 +29,9 @@
 
 package org.n52.sta.serdes.util;
 
-import org.n52.shetland.oasis.odata.query.option.QueryOptions;
-
 import java.util.List;
+
+import org.n52.shetland.oasis.odata.query.option.QueryOptions;
 
 /**
  * Wrapper used for serialization of collections to JSON.

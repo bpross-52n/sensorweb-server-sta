@@ -29,13 +29,13 @@
 
 package org.n52.sta.data.query;
 
+import javax.persistence.criteria.Expression;
+
 import org.n52.series.db.beans.parameter.ParameterEntity;
 import org.n52.shetland.ogc.filter.FilterConstants;
 import org.n52.shetland.ogc.sta.StaConstants;
 import org.n52.shetland.ogc.sta.exception.STAInvalidFilterExpressionException;
 import org.springframework.data.jpa.domain.Specification;
-
-import javax.persistence.criteria.Expression;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

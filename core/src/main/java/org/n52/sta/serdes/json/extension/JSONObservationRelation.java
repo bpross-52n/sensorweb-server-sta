@@ -29,12 +29,14 @@
 
 package org.n52.sta.serdes.json.extension;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.n52.series.db.beans.sta.mapped.extension.ObservationRelation;
 import org.n52.sta.serdes.json.AbstractJSONEntity;
 import org.n52.sta.serdes.json.JSONBase;
 import org.springframework.util.Assert;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

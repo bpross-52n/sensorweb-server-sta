@@ -34,15 +34,15 @@
 
 package org.n52.sta.mqtt.core.subscription;
 
+import java.util.Map;
+import java.util.Set;
+import java.util.regex.Matcher;
+
 import org.n52.series.db.beans.HibernateRelations;
 import org.n52.sta.utils.CoreRequestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;
-
-import java.util.Map;
-import java.util.Set;
-import java.util.regex.Matcher;
 
 /**
  * @author <a href="mailto:s.drost@52north.org">Sebastian Drost</a>

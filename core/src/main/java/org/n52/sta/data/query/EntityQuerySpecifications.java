@@ -29,17 +29,18 @@
 
 package org.n52.sta.data.query;
 
-import org.n52.series.db.beans.DescribableEntity;
-import org.n52.shetland.ogc.filter.FilterConstants;
-import org.n52.shetland.ogc.sta.exception.STAInvalidFilterExpressionException;
-import org.springframework.data.jpa.domain.Specification;
+import java.util.Date;
+import java.util.List;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Path;
 import javax.persistence.criteria.Predicate;
-import java.util.Date;
-import java.util.List;
+
+import org.n52.series.db.beans.DescribableEntity;
+import org.n52.shetland.ogc.filter.FilterConstants;
+import org.n52.shetland.ogc.sta.exception.STAInvalidFilterExpressionException;
+import org.springframework.data.jpa.domain.Specification;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

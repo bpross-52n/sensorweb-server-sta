@@ -29,23 +29,23 @@
 
 package org.n52.sta.data.query;
 
-import org.n52.series.db.beans.DatasetEntity;
-import org.n52.series.db.beans.DescribableEntity;
-import org.n52.series.db.beans.FeatureEntity;
-import org.n52.series.db.beans.parameter.ParameterEntity;
-import org.n52.series.db.beans.sta.mapped.DatastreamEntity;
-import org.n52.series.db.beans.sta.mapped.ObservationEntity;
-import org.n52.shetland.ogc.filter.FilterConstants;
-import org.n52.shetland.ogc.sta.StaConstants;
-import org.n52.shetland.ogc.sta.exception.STAInvalidFilterExpressionException;
-import org.springframework.data.jpa.domain.Specification;
-
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Join;
 import javax.persistence.criteria.JoinType;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import javax.persistence.criteria.Subquery;
+
+import org.n52.series.db.beans.DatasetEntity;
+import org.n52.series.db.beans.DescribableEntity;
+import org.n52.series.db.beans.FeatureEntity;
+import org.n52.series.db.beans.parameter.ParameterEntity;
+import org.n52.series.db.beans.sta.DatastreamEntity;
+import org.n52.series.db.beans.sta.ObservationEntity;
+import org.n52.shetland.ogc.filter.FilterConstants;
+import org.n52.shetland.ogc.sta.StaConstants;
+import org.n52.shetland.ogc.sta.exception.STAInvalidFilterExpressionException;
+import org.springframework.data.jpa.domain.Specification;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

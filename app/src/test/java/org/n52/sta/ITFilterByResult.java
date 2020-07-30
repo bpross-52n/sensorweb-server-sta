@@ -29,15 +29,15 @@
 
 package org.n52.sta;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import org.junit.jupiter.api.Assertions;
+import java.io.IOException;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
-import java.io.IOException;
+import com.fasterxml.jackson.databind.JsonNode;
 
 /**
  * Test filtering by related Entities. For now only checks that no error is returned.

@@ -29,11 +29,15 @@
 
 package org.n52.sta.data.query;
 
+import javax.persistence.criteria.Expression;
+import javax.persistence.criteria.Root;
+import javax.persistence.criteria.Subquery;
+
 import org.n52.series.db.beans.AbstractFeatureEntity;
 import org.n52.series.db.beans.DatasetEntity;
 import org.n52.series.db.beans.DescribableEntity;
 import org.n52.series.db.beans.sta.LocationEntity;
-import org.n52.series.db.beans.sta.mapped.ObservationEntity;
+import org.n52.series.db.beans.sta.ObservationEntity;
 import org.n52.shetland.oasis.odata.ODataConstants;
 import org.n52.shetland.ogc.filter.FilterConstants;
 import org.n52.shetland.ogc.sta.StaConstants;
@@ -41,10 +45,6 @@ import org.n52.shetland.ogc.sta.exception.STAInvalidFilterExpressionException;
 import org.n52.sta.data.service.util.HibernateSpatialCriteriaBuilder;
 import org.n52.svalbard.odata.core.expr.GeoValueExpr;
 import org.springframework.data.jpa.domain.Specification;
-
-import javax.persistence.criteria.Expression;
-import javax.persistence.criteria.Root;
-import javax.persistence.criteria.Subquery;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

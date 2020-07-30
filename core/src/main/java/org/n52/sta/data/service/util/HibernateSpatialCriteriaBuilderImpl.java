@@ -29,11 +29,11 @@
 
 package org.n52.sta.data.service.util;
 
-import org.hibernate.query.criteria.internal.CriteriaBuilderImpl;
-import org.locationtech.jts.geom.Geometry;
-
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Predicate;
+
+import org.hibernate.query.criteria.internal.CriteriaBuilderImpl;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Extension of Hibernate CriteriaBuilder API Implementation to include Spatial functions.

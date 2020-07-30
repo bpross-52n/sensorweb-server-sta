@@ -29,14 +29,15 @@
 
 package org.n52.sta.url;
 
-import org.springframework.util.StringUtils;
-import org.springframework.web.util.UriUtils;
-
-import javax.servlet.http.HttpServletRequest;
 import java.nio.charset.StandardCharsets;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.util.StringUtils;
+import org.springframework.web.util.UriUtils;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

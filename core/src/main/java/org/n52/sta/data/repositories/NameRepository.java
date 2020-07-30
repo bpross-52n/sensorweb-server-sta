@@ -29,10 +29,10 @@
 
 package org.n52.sta.data.repositories;
 
+import java.util.Optional;
+
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Optional;
 
 @NoRepositoryBean
 @Transactional

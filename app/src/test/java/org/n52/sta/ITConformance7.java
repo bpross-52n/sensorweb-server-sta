@@ -29,7 +29,6 @@
 
 package org.n52.sta;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import org.eclipse.paho.client.mqttv3.IMqttClient;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
@@ -43,6 +42,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.testcontainers.junit.jupiter.Testcontainers;
+
+import com.fasterxml.jackson.databind.JsonNode;
 
 /**
  * Implements Conformance Tests according to Section A.7 in OGC SensorThings API Part 1: Sensing (15-078r6)

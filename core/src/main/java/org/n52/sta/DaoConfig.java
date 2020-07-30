@@ -28,6 +28,13 @@
  */
 package org.n52.sta;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
+
 import org.hibernate.boot.model.TypeContributor;
 import org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl;
 import org.hibernate.jpa.boot.spi.TypeContributorList;
@@ -39,12 +46,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-
-import javax.persistence.EntityManagerFactory;
-import javax.sql.DataSource;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

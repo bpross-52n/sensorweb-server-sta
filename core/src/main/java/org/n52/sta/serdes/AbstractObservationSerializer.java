@@ -29,9 +29,11 @@
 
 package org.n52.sta.serdes;
 
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializerProvider;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.n52.series.db.beans.parameter.ParameterEntity;
@@ -47,10 +49,9 @@ import org.n52.shetland.ogc.sta.model.STAEntityDefinition;
 import org.n52.shetland.util.DateTimeHelper;
 import org.n52.sta.serdes.util.ElementWithQueryOptions;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializerProvider;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

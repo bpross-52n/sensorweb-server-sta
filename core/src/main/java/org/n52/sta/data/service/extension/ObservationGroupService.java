@@ -29,6 +29,9 @@
 
 package org.n52.sta.data.service.extension;
 
+import java.util.Optional;
+import java.util.UUID;
+
 import org.n52.janmayen.http.HTTPStatus;
 import org.n52.series.db.beans.sta.mapped.extension.ObservationGroup;
 import org.n52.shetland.filter.ExpandFilter;
@@ -45,9 +48,6 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Optional;
-import java.util.UUID;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

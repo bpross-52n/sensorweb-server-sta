@@ -29,30 +29,28 @@
 
 package org.n52.sta.serdes;
 
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.databind.DeserializationContext;
-import com.fasterxml.jackson.databind.SerializerProvider;
-import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-import org.n52.series.db.beans.sta.mapped.extension.License;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
 import org.n52.series.db.beans.sta.mapped.extension.Party;
 import org.n52.shetland.filter.ExpandItem;
 import org.n52.shetland.oasis.odata.query.option.QueryOptions;
 import org.n52.shetland.ogc.sta.StaConstants;
 import org.n52.shetland.ogc.sta.model.STAEntityDefinition;
 import org.n52.sta.serdes.json.JSONBase;
-import org.n52.sta.serdes.json.extension.JSONLicense;
 import org.n52.sta.serdes.json.extension.JSONParty;
-import org.n52.sta.serdes.util.ElementWithQueryOptions;
-import org.n52.sta.serdes.util.ElementWithQueryOptions.LicenseWithQueryOptions;
 import org.n52.sta.serdes.util.ElementWithQueryOptions.PartyWithQueryOptions;
 import org.n52.sta.serdes.util.EntityPatch;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.SerializerProvider;
+import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
+
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

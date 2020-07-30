@@ -29,9 +29,9 @@
 
 package org.n52.sta.data.service.util;
 
-import org.n52.sta.serdes.util.ElementWithQueryOptions;
-
 import java.util.List;
+
+import org.n52.sta.serdes.util.ElementWithQueryOptions;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

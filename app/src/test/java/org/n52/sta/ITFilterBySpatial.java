@@ -29,13 +29,13 @@
 
 package org.n52.sta;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
 import org.testcontainers.junit.jupiter.Testcontainers;
+
+import com.fasterxml.jackson.databind.JsonNode;
 
 /**
  * Test filtering using spatial operators. For now only checks if no error is thrown.

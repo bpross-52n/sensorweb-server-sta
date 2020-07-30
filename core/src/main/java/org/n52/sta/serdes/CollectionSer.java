@@ -29,9 +29,9 @@
 
 package org.n52.sta.serdes;
 
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.databind.SerializerProvider;
-import com.fasterxml.jackson.databind.ser.std.StdSerializer;
+import java.io.IOException;
+import java.util.Set;
+
 import org.n52.shetland.filter.SkipTopFilter;
 import org.n52.shetland.oasis.odata.query.option.QueryOptions;
 import org.n52.shetland.ogc.filter.FilterClause;
@@ -39,8 +39,9 @@ import org.n52.shetland.ogc.filter.FilterConstants;
 import org.n52.sta.data.service.util.CollectionWrapper;
 import org.n52.sta.serdes.util.ElementWithQueryOptions;
 
-import java.io.IOException;
-import java.util.Set;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.SerializerProvider;
+import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

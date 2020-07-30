@@ -29,6 +29,9 @@
 
 package org.n52.sta.data.repositories;
 
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -37,9 +40,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.lang.Nullable;
-
-import java.util.List;
-import java.util.Optional;
 
 /**
  * Repository shadowing JpaSpecificationExecutor methods with additional EntityGraph Parameters.

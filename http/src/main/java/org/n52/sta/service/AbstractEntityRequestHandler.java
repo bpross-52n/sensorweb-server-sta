@@ -29,15 +29,16 @@
 
 package org.n52.sta.service;
 
+import java.util.HashSet;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.n52.shetland.filter.SelectFilter;
 import org.n52.shetland.oasis.odata.query.option.QueryOptions;
 import org.n52.shetland.ogc.filter.FilterClause;
 import org.n52.sta.data.service.EntityServiceRepository;
 import org.n52.sta.serdes.util.ElementWithQueryOptions;
 import org.n52.sta.utils.RequestUtils;
-
-import javax.servlet.http.HttpServletRequest;
-import java.util.HashSet;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

@@ -29,7 +29,10 @@
 
 package org.n52.sta.service.core;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.n52.series.db.beans.HibernateRelations;
 import org.n52.shetland.ogc.sta.exception.STACRUDException;
 import org.n52.shetland.ogc.sta.exception.STAInvalidUrlException;
@@ -46,8 +49,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * Handles all CUD requests (POST, PUT, DELETE)

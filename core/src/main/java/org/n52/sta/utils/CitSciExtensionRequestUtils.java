@@ -29,6 +29,8 @@
 
 package org.n52.sta.utils;
 
+import java.util.regex.Pattern;
+
 import org.n52.series.db.beans.sta.mapped.extension.CSDatastream;
 import org.n52.series.db.beans.sta.mapped.extension.CSObservation;
 import org.n52.series.db.beans.sta.mapped.extension.License;
@@ -40,8 +42,6 @@ import org.n52.shetland.ogc.sta.exception.STAInvalidUrlException;
 import org.n52.shetland.ogc.sta.model.STAEntityDefinition;
 import org.n52.shetland.ogc.sta.model.extension.CitSciExtensionEntityDefinition;
 import org.n52.sta.serdes.ObservationGroupSerDes;
-
-import java.util.regex.Pattern;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

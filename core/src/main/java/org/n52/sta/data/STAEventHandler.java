@@ -29,11 +29,11 @@
 
 package org.n52.sta.data;
 
-import org.n52.sta.data.service.EntityServiceRepository;
-import org.springframework.scheduling.annotation.Async;
-
 import java.util.Map;
 import java.util.Set;
+
+import org.n52.sta.data.service.EntityServiceRepository;
+import org.springframework.scheduling.annotation.Async;
 
 /**
  * Interface to be implemented by Handlers responding to Entity Creation (e.g. Handler for MQTT Subscription).

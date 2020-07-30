@@ -28,11 +28,11 @@
  */
 package org.n52.sta.mqtt.core;
 
-import org.springframework.stereotype.Component;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.springframework.stereotype.Component;
 
 /**
  * @author <a href="mailto:j.speckamp@52north.org">Jan Speckamp</a>

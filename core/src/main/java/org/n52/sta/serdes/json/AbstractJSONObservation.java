@@ -29,10 +29,9 @@
 
 package org.n52.sta.serdes.json;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.ArrayNode;
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import java.util.Date;
+import java.util.HashSet;
+
 import org.joda.time.DateTime;
 import org.locationtech.jts.geom.GeometryFactory;
 import org.locationtech.jts.geom.PrecisionModel;
@@ -47,8 +46,11 @@ import org.n52.shetland.ogc.gml.time.TimePeriod;
 import org.n52.shetland.ogc.sos.Sos2Constants;
 import org.springframework.util.Assert;
 
-import java.util.Date;
-import java.util.HashSet;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 @SuppressWarnings("VisibilityModifier")
 @SuppressFBWarnings({"NM_FIELD_NAMING_CONVENTION", "UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD"})

@@ -29,8 +29,11 @@
 
 package org.n52.sta.data.service;
 
-import org.n52.series.db.beans.sta.mapped.extension.CSDatastream;
-import org.n52.series.db.beans.sta.mapped.extension.ObservationGroup;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import javax.annotation.PostConstruct;
+
 import org.n52.sta.data.STAEventHandler;
 import org.n52.sta.data.service.extension.CSDatastreamService;
 import org.n52.sta.data.service.extension.CSObservationService;
@@ -41,10 +44,6 @@ import org.n52.sta.data.service.extension.PartyService;
 import org.n52.sta.data.service.extension.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.PostConstruct;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 /**
  * Repository for all Sensor Things entity data services

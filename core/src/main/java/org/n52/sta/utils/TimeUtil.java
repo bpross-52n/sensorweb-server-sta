@@ -28,14 +28,14 @@
  */
 package org.n52.sta.utils;
 
+import java.sql.Timestamp;
+import java.util.Date;
+
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.n52.shetland.ogc.gml.time.Time;
 import org.n52.shetland.ogc.gml.time.TimeInstant;
 import org.n52.shetland.ogc.gml.time.TimePeriod;
-
-import java.sql.Timestamp;
-import java.util.Date;
 
 public class TimeUtil {
 
